@@ -10,11 +10,11 @@ Performance benchmark and verification framework for complex vector multiplicati
 * **Benchmarking & Testing**: Includes automated verification testbench measuring clock cycles (`clock()`) between NEON SIMD and reference C code.
 
 ## Project Structure
-* `add_vector_fast_5.c` — Vectorized complex multiplication using ARM NEON intrinsics (`vld2_s16`, `vmlsl_s16`, `vmlal_s16`).
-* `add_vector_ref_5.c` — Scalar reference implementation.
-* `add_vector_tb_5.c` — Testbench with randomized complex vector generation and performance measurement.
-* `add_vector_5.c` — Verification wrapper layer comparing fast and reference output vectors.
-* `dsp-lecture_7.h` — Header file defining `cint16_t`, `cint32_t` structures and function prototypes.
+* `add_vector_fast.c` — Vectorized complex multiplication using ARM NEON intrinsics (`vld2_s16`, `vmlsl_s16`, `vmlal_s16`).
+* `add_vector_ref.c` — Scalar reference implementation.
+* `add_vector_tb.c` — Testbench with randomized complex vector generation and performance measurement.
+* `add_vector.c` — Verification wrapper layer comparing fast and reference output vectors.
+* `dsp-lecture.h` — Header file defining `cint16_t`, `cint32_t` structures and function prototypes.
 * `Makefile` — Build script configured for ARMv7-A NEON target (`-march=armv7-a -mfpu=neon`).
 
 ## Build & Run
